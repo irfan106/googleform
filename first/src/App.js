@@ -30,14 +30,13 @@ function App() {
   }
   function Reset() {
     setDetails(defaultDetails);
-    console.log(Details)
   }
 
   async function handleSubmit(event) {
     event.preventDefault();
 
     try {
-      const response = await fetch('/api/submit', {
+      const response = await fetch('https://google-form-i6ez.onrender.com/api/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -46,6 +45,7 @@ function App() {
       });
 
       if (response.ok) {
+        Reset();
         console.log('Form1 submitted successfully');
       } else {
         console.error('Form submission failed');
