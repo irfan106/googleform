@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 // Use the 'cors' middleware to enable CORS for the '/api/submit' route
 app.use('/api/submit', cors({
-  origin: 'https://64f3187fdbe81d6a4bf3c2c9--google-form-lakshay.netlify.app',
+  origin: 'https://64f31a042cc4e06e30e68374--google-form-lakshay.netlify.app',
   methods: 'POST', // Allow only POST requests
 }));
 
